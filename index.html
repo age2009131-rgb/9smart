@@ -1,36 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9Smart | AI & Tech Reviews</title>
+    <title>9Smart | Tech Reviews & AI Insights</title>
     <style>
-        body { font-family: sans-serif; margin: 0; background: #f8fafc; }
-        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
-        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 400px; margin: 20px auto; text-align: left; }
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .hero h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 10px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 50px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
     </style>
 </head>
 <body>
 
-    <header style="background: #0f172a; text-align: center;">
-        <img src="9smart.jpg" alt="9Smart Logo" style="width: 100%; max-width: 1200px; height: auto;">
-    </header>
+<header>
+<h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
+        9Smart - AI Tools, SEO, and Digital Growth Reviews
+    </h1>
+    <img src="9smart.png" alt="9Smart AI & Tech" style="width: 100%; max-width: 1000px; height: auto; display: block; margin: 0 auto;"> 
+</header>
 
-    <nav style="background: #1e293b; padding: 15px; text-align: center; position: sticky; top: 0;">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="macbook-neo-review.html">Reviews</a>
-    </nav>
+<div class="container">
+    <section class="hero">
+        <h2>Unlocking the Future of Technology</h2>
+        <p>Expert, unbiased reviews and the latest news in Artificial Intelligence and smart home devices.</p>
+    </section>
 
-    <main style="padding: 40px 20px;">
-        <h2 style="text-align: center; color: #1e293b;">Latest Tech Insights</h2>
-        
+    <div class="grid">
         <div class="card">
-            <h3 style="margin-top: 0;">MacBook Neo Review (2026)</h3>
-            <p style="color: #64748b;">Is Apple's new budget laptop worth it? We dive deep into the specs and performance.</p>
-            <a href="macbook-neo-review.html" style="color: #2563eb; text-decoration: none; font-weight: bold;">Read Full Article &rarr;</a>
+            <h3>Top AI Tools of 2026</h3>
+            <p>Comprehensive review of the game-changing AI platforms that are redefining productivity today.</p>
+            <a href="#" class="btn">Read Review</a>
         </div>
-    </main>
+
+        <div class="card">
+            <h3>Smart Home Guide</h3>
+            <p>We tested the best 10 smart home ecosystems to find out which one fits your modern lifestyle.</p>
+            <a href="#" class="btn">Check Deals</a>
+        </div>
+
+        <div class="card">
+            <h3>AI for Beginners</h3>
+            <p>Everything you need to know to start your journey into Artificial Intelligence and machine learning.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 9Smart Tech Blog. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
